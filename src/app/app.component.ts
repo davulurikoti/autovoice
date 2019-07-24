@@ -11,6 +11,7 @@ import { CallserviceService } from './services/callservice.service';
 export class AppComponent {
   notification = "Hurricane Notification";
   data = "Please edit this message";
+  calling = "Calling.... "
   customers:Array<any> = [
       {num: '+523321302239', name: 'Koti Davuluri'},
       {num: '+523314864006', name: 'Ruben Barajas'},
@@ -25,8 +26,9 @@ export class AppComponent {
       res => {
         console.log(res.id);
         console.log(this.selectCustomer.num);
+         this.calling = "Calling initiated for";
         this.callservice.callMember(res.id,this.selectCustomer.num).subscribe((data: {}) => {
-            
+           
     });
       }
     )
