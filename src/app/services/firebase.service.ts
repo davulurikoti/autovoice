@@ -10,7 +10,7 @@ export class FirebaseService {
 
   createMessage(notification, message, name){
     return this.db.collection('messages').add({
-      message: "Hello "+name+". You have a "+notification+"."+message
+      message: "Hello "+name+". You have a "+notification+". "+message
     });
   }
 }

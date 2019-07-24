@@ -9,7 +9,7 @@ import { map, catchError, tap } from 'rxjs/operators';
 export class CallserviceService {
 
   constructor(private http: HttpClient) { }
-	endpoint = 'http://localhost:3000/call';
+	endpoint = 'https://automatedvoiceservice.herokuapp.com/call';
 	callMember(id,number): Observable<any>{
 	console.log(this.endpoint+'/'+id+'/'+number);
 	return this.http.get(this.endpoint+'/'+id+'/'+number);

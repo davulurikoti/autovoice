@@ -12,10 +12,10 @@ export class AppComponent {
   notification = "Hurricane Notification";
   data = "Please edit this message";
   customers:Array<any> = [
-      {num: '+5213321302239', name: 'Koti Davuluri'},
-      {num: '+5213314864006', name: 'Ruben Barajas'},
+      {num: '+523321302239', name: 'Koti Davuluri'},
+      {num: '+523314864006', name: 'Ruben Barajas'},
       {num: '+5215520023019', name: 'Roman Castillo'},
-      {num: '+5213171201864', name: 'Eduardo Jose'}
+      {num: '+523171201864', name: 'Eduardo Jose'}
   ];
   selectCustomer = this.customers[0];
   constructor(public firebaseService: FirebaseService, public callservice:CallserviceService){}
